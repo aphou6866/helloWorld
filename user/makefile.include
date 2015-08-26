@@ -1,0 +1,7 @@
+TARGET_ARCH = linux
+# GNUC	= g++
+GNUC	= i586-poky-linux-gcc
+AR	= i586-poky-linux-ar
+CFLAGS =  -I$(MKLROOT)/include  -Wno-write-strings -Wno-deprecated -Wall -O3 $(DEBUG)
+## CFLAGS =  -Wno-deprecated  -Wall -g 
+E = echo ; echo \\\# `date +%Y.%m.%d.%H:%M:%S` ---
