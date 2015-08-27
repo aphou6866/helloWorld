@@ -25,8 +25,8 @@ all:	clean $(LIB_OBJS) $(OBJS) $(PROG)
 
 install: $(PROG)
 	@$(E) Installing $< to $@
-	mkdir -p ${DESTDIR}/${SBINDIR}
-	install -m 0755 $^ ${DESTDIR}/${SBINDIR}/
+	mkdir -p ${DESTDIR}/${BINDIR}
+	install -m 0755 $^ ${DESTDIR}/${BINDIR}/
 	
 clean:
 	@$(E) Removing $(OBJS), $(LIB_OBJS) and $(LIB_OBJS)
